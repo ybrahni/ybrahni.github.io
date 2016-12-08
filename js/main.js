@@ -8,8 +8,8 @@
     }
 
     $('#contact_form').on('submit', function (e) {
-        $('#contact_form *').fadeOut(2000);
-        $('#contact_form').prepend('Your submission has been processed...');
+        $('#contact_form *').fadeOut(300);
+        $('#contact_form').prepend('Thank you for your message! I will get back to you as soon as possible.');
     });
 
     // parallax effect
