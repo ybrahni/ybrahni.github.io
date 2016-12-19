@@ -19,10 +19,7 @@
         <!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
 
         <!-- Google fonts -->
-
         <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="js/jquery.min.js"></script>
 
     </head>
     <body data-spy="scroll" data-target=".navbar">
@@ -63,7 +60,7 @@
             <div class="container">
                 <h1>A propos</h1>
                 <p class="medium-text wow slideInDown" data-wow-duration="2s">
-                    My name is BRAHNI Yassine. I am a <strong>web developer</strong>. I have a passion for creating beautiful designs. I'm always building new and exciting things for the web. I help companies and clients build successful online identities using creativity and innovation.
+                    My name is BRAHNI Yassine. I am a <strong>web developer</strong>. I have a passion for creating beautiful website. I'm always building new and exciting things for the web. I help companies and clients build successful online identities using creativity and innovation.
                 </p>
                 <div class="row-fluid">
                     <div class="span7">
@@ -203,15 +200,15 @@
                         <form class="contact_form" enctype="text/plain" id="contact_form" action="https://docs.google.com/forms/d/14-D4_kPxHWGMQAvp2YcZVZoOSf-3bWh4frTkpVUQW6M/prefill" target="hidden_iframe" onsubmit="submitted = true;">
                             <div class="contact-row">
                                 <i class="fa fa-user"></i>
-                                <input type="text" id="entry.1272382465" name="entry.1272382465" placeholder="Nom">
+                                <input type="text" id="entry.1272382465" autocomplete="false" name="entry.1272382465" placeholder="Nom">
                             </div>
                             <div class="contact-row">
                                 <i class="fa fa-envelope"></i>
-                                <input type="text" id="entry.1340367931" name="entry.1340367931" placeholder="Email">      
+                                <input type="text" id="entry.1340367931" autocomplete="false" name="entry.1340367931" placeholder="Email">      
                             </div> 
                             <div class="contact-row">
                                 <i class="fa fa-comment"></i>
-                                <textarea id="entry.1575909089" name="entry.1575909089" placeholder="Message"></textarea>
+                                <textarea id="entry.1575909089" autocomplete="false" name="entry.1575909089" placeholder="Message"></textarea>
                             </div>
                             <button type="submit" id="submit_contact_info" class="btn btn-primary btn-large btn-clear pull-right">Envoyé <i class="fa fa-envelope"></i></button>
                         </form>
@@ -232,10 +229,13 @@
             <img class="masthead-image parallax" src="img/main4.jpg">
         </div>
         <!-- contact ends -->
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/jquery.ui.ease.js"></script>
         <script src="js/vendor/jquery.isotope.min.js"></script>
         <script src="js/wow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 
         <!--[if lte IE 9]>
             <script src="js/ie.js"></script>

@@ -468,6 +468,7 @@ h2.content-intro{
 }
 .about-meta{
 	margin-bottom: 10px;
+    letter-spacing: 1.3px;
 	display: inline-block;
 }
 blockquote{
@@ -516,9 +517,12 @@ blockquote small{
 	-webkit-transition: 150ms all;
 	border-radius: 4px;
 	border: 1px solid #fff;
+	background: rgba(255,255,255,1);
 }
 #submit_contact_info{
+	background-color: #fff;
 	margin-bottom: 10px;
+    color: #1884bb;
 }
 .contact-row i{
 	color: #fff;
@@ -537,11 +541,24 @@ blockquote small{
 	-moz-transition: 100ms all;
 	-webkit-transition: 100ms all;
 }
-.contact-row.active-row i, .contact-row:hover i, 
+/*.contact-row.active-row i, .contact-row:hover i, 
 .contact-row.active-row input, .contact-row:hover input,
 .contact-row.active-row textarea, .contact-row:hover textarea{
 	color:#555;
+}*/
+
+.contact-row i, .contact-row input, .contact-row textarea{
+	color:#555;
 }
+
+.contact-row textarea{
+    resize: none;
+ }
+.contact-row input:focus, .contact-row textarea:focus{
+	border: none;
+    box-shadow: none;
+}
+
 .contact-row input{
 	margin-bottom: 0;
 }
@@ -559,7 +576,8 @@ input[type="text"], textarea{
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
-input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:focus{
+input[type="text"], textarea{
+	color: #000;
 	border: none;
 	box-shadow: none;
 	-o-box-shadow: none;
@@ -672,14 +690,14 @@ p{
 	display: none;
 }
 
-.btn-clear:hover, .contact-row:hover, .contact-row.active-row {
+/*.btn-clear:hover, .contact-row:hover, .contact-row.active-row {
 	background: rgba(255,255,255,1);
 	box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
 	-o-box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
 	-moz-box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
 	-webkit-box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
 }
-
+*/
 
 @-webkit-keyframes toBottomFromTop {
 	49% {
@@ -741,9 +759,6 @@ p{
 	background-color: none;
 	font-weight: bold;
 }
-.btn.btn-clear:hover, .btn.btn-clear.selected{
-	background: #fff !important;
-}
 .top-shadow{
 	height: 30px;
 	width: 100%;
@@ -786,6 +801,85 @@ p.medium-text{
 	margin-top: 0;
 }
 
+/*Pace*/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #29d;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.pace .pace-progress-inner {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1.0;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -moz-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  -o-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+.pace .pace-activity {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 15px;
+  right: 15px;
+  width: 14px;
+  height: 14px;
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 10px;
+  -webkit-animation: pace-spinner 400ms linear infinite;
+  -moz-animation: pace-spinner 400ms linear infinite;
+  -ms-animation: pace-spinner 400ms linear infinite;
+  -o-animation: pace-spinner 400ms linear infinite;
+  animation: pace-spinner 400ms linear infinite;
+}
+
+@-webkit-keyframes pace-spinner {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes pace-spinner {
+  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-o-keyframes pace-spinner {
+  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-ms-keyframes pace-spinner {
+  0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes pace-spinner {
+  0% { transform: rotate(0deg); transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+/* End Pace */
 /* Responsive
 =============================*/
 @media(max-width: 1200px){
