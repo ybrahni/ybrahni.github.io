@@ -1,12 +1,5 @@
 (function () {
 
-    // WOW effect
-    try {
-        new WOW().init();
-    } catch (e) {
-        console.log(e.message);
-    }
-
     $('#contact_form').on('submit', function (e) {
         $('#contact_form *').fadeOut(300);
         $('#contact_form').prepend('Thank you for your message! I will get back to you as soon as possible.');
@@ -103,46 +96,46 @@
         if ($(window).width() <= 450) {
             cw3 = parseInt(cw, 10);
         }
-        $('#container-isotope').isotope({
-            masonry: {
-                columnWidth: cw3
-            }
-        });
+        // $('#container-isotope').isotope({
+        //     masonry: {
+        //         columnWidth: cw3
+        //     }
+        // });
         $('.nav.option-set').removeAttr("style");
         update_parallax();
     }).resize();
     $(window).load(function () {
         $(window).resize();
     });
-    var $optionSets = $('.option-isotope'),
-            $optionLinks = $optionSets.find('a'),
-            $container = $('#container-isotope');
-    $optionLinks.click(function (e) {
-        e.preventDefault();
-        $clicked = $(this);
-        var current_select = $clicked.hasClass("selected");
-        var $this = $(this);
-
-        if ($this.hasClass('selected'))
-            return false;
-
-        var $optionSet = $this.parents('.option-isotope');
-        $optionSet.find('.selected').removeClass('selected');
-        $this.addClass('selected');
-
-        var options = {},
-                key = $optionSet.attr('data-option-key'),
-                value = $this.attr('data-option-value');
-
-        value = (value === 'false') ? false : value;
-        options[ key ] = value;
-        if (key === 'layoutMode' && typeof changeLayoutMode === 'function')
-            changeLayoutMode($this, options);
-        else
-            $container.isotope(options);
-
-        return false;
-    });
+    // var $optionSets = $('.option-isotope'),
+    //         $optionLinks = $optionSets.find('a'),
+    //         $container = $('#container-isotope');
+    // $optionLinks.click(function (e) {
+    //     e.preventDefault();
+    //     $clicked = $(this);
+    //     var current_select = $clicked.hasClass("selected");
+    //     var $this = $(this);
+    //
+    //     if ($this.hasClass('selected'))
+    //         return false;
+    //
+    //     var $optionSet = $this.parents('.option-isotope');
+    //     $optionSet.find('.selected').removeClass('selected');
+    //     $this.addClass('selected');
+    //
+    //     var options = {},
+    //             key = $optionSet.attr('data-option-key'),
+    //             value = $this.attr('data-option-value');
+    //
+    //     value = (value === 'false') ? false : value;
+    //     options[ key ] = value;
+    //     if (key === 'layoutMode' && typeof changeLayoutMode === 'function')
+    //         changeLayoutMode($this, options);
+    //     else
+    //         $container.isotope(options);
+    //
+    //     return false;
+    // });
 
 
     // Responsive nav
@@ -200,5 +193,3 @@
     }());
 
 })();
-
-

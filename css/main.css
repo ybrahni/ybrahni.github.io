@@ -72,7 +72,7 @@ a:hover{
 	position: fixed;
 	left: 0;
 	top: 0;
-	display: block;	
+	display: block;
 	z-index: 999;
 	background: #000;
 }
@@ -96,7 +96,7 @@ a:hover{
 	-webkit-box-shadow: none;
 }
 .navbar ul.nav{
-	margin-right: 0;	
+	margin-right: 0;
 }
 .navbar .nav>li, .navbar ul.nav{
 	clear:both;
@@ -184,7 +184,7 @@ a:hover{
 }
 .navbar .nav>li>a i{
 	width: 20px;
-	display: inline-block;	
+	display: inline-block;
 }
 .navbar .nav>li>a, .navbar .nav>li>a:hover{
 	transition: 200ms background ease, 400ms border ease;
@@ -365,7 +365,7 @@ img.portfolio-image{
 	color:#fff;
 }
 .element .portfolio-text i, .about-meta i{
-	margin-right:8px;	
+	margin-right:8px;
 }
 .portfolio-text h3{
 	font-family: 'Lato', sans-serif;
@@ -378,8 +378,8 @@ img.portfolio-image{
 }
 .element:hover img.portfolio-image{
 	top:-3%;
-	left:-3%;	
-	
+	left:-3%;
+
 	height: 106%;
 	width: 106%;
 
@@ -506,7 +506,7 @@ blockquote small{
 	width: 30%;
 }
 .contact_form textarea{
-	height: 100px;	
+	height: 100px;
 }
 .contact-row{
 	padding: 5px 3px;
@@ -541,7 +541,7 @@ blockquote small{
 	-moz-transition: 100ms all;
 	-webkit-transition: 100ms all;
 }
-/*.contact-row.active-row i, .contact-row:hover i, 
+/*.contact-row.active-row i, .contact-row:hover i,
 .contact-row.active-row input, .contact-row:hover input,
 .contact-row.active-row textarea, .contact-row:hover textarea{
 	color:#555;
@@ -597,10 +597,10 @@ body{
 	background: #111;
 }
 .navbar h1,.navbar h2,.navbar h3,.navbar h4,.navbar h5,.navbar h6,.navbar p,.navbar body{
-	color: #555;	
+	color: #555;
 }
 h1,h2,h3,h4,h5,h6,p,span,body{
-	color: #fff;	
+	color: #fff;
 }
 h1, h2{
 	margin-bottom: 10px;
@@ -659,8 +659,8 @@ p{
 	height: 100%;
 	border-radius: 50%;
 	content: '';
-	-webkit-box-sizing: content-box; 
-	-moz-box-sizing: content-box; 
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
@@ -799,6 +799,36 @@ p.medium-text{
 }
 .no-margin-top{
 	margin-top: 0;
+}
+
+#home{
+    height: 100vh;
+}
+
+#home .intro-text {
+    animation-delay: .4s;
+    -vendor-animation-duration: 5s;
+    -vendor-animation-delay: 2s;
+    -vendor-animation-iteration-count: infinite;
+}
+
+#home .intro-secondary{
+    animation-delay: 1.4s;
+    -vendor-animation-duration: 5s;
+    -vendor-animation-delay: 2s;
+    -vendor-animation-iteration-count: infinite;
+}
+
+#home .social-icons a:nth-child(1){
+    animation-delay: 1.8s;
+}
+
+#home .social-icons a:nth-child(2){
+    animation-delay: 2.2s;
+}
+
+#home .social-icons a:nth-child(3){
+    animation-delay: 2.6s;
 }
 
 /*Pace*/
@@ -1059,7 +1089,7 @@ p.medium-text{
 }
 @media(max-width: 450px){
 	.navbar .nav>li>a{
-	
+
 		font-size: 13px;
 	}
 	.element{
