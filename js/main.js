@@ -1,10 +1,9 @@
 (function () {
-
-    $('#contact_form').on('submit', function (e) {
-        $('#contact_form *').fadeOut(300);
-        $('#contact_form').prepend('Thank you for your message! I will get back to you as soon as possible.');
+    var submitted = false;
+    $('#gform').on('submit', function (e) {
+        $('#gform *').fadeOut(2000);
+        $('#gform').prepend('Your submission has been processed...');
     });
-
     // parallax effect
     window.onscroll = function (e) {
         update_parallax();
